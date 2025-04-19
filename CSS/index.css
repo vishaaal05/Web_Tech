@@ -1,0 +1,68 @@
+/* 1. Universal selector to reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Style all p elements */
+p {
+    font-size: 18px;
+}
+
+/* 3. Style element with ID main-title */
+#main-title {
+    color: blue;
+    text-align: center;
+}
+
+/* 4. Style elements with class intro */
+.intro {
+    font-style: italic;
+    color: gray;
+}
+
+/* 5. Select all p inside .box */
+.box p {
+    color: green;
+}
+
+/* 6. Child selector for h2 inside .box */
+.box > h2 {
+    color: red;
+}
+
+/* 7. Adjacent sibling selector */
+h1 + p {
+    font-weight: bold;
+}
+
+/* 8. General sibling selector */
+h1 ~ p {
+    background-color: yellow;
+}
+
+/* 9. Style li with highlight class */
+li.highlight {
+    background-color: lightblue;
+}
+
+/* 10. Attribute selector for input fields */
+input[type="text"] {
+    border: 1px solid black;
+}
+
+/* 11. Hover pseudo-class for links */
+a:hover {
+    color: purple;
+}
+
+/* 12. Before pseudo-element for h1 */
+h1::before {
+    content: "📝 ";
+}
+
+/* 13. First-letter pseudo-element for p */
+p::first-letter {
+    font-size: larger;
+    color: orange;
+}
